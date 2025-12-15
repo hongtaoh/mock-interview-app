@@ -11,7 +11,7 @@ const mockUsers = [
 
 export default function Directory() {
   const { currentUser } = useUser();
-  const [users, setUsers] = useState(mockUsers);
+  const [users] = useState(mockUsers);
   const [filters, setFilters] = useState({ company: '', experience: '' });
 
   const filteredUsers = users.filter(user => {

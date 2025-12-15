@@ -39,7 +39,7 @@ export default function InterviewRequests() {
     }
   };
 
-  const handleHelpOut = (requestId) => {
+  const handleHelpOut = () => {
     setCurrentUser({...currentUser, credits: currentUser.credits + 1});
     alert('Thanks for helping! You earned 1 credit.');
   };
